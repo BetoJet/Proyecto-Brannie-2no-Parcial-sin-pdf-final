@@ -1,0 +1,205 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+   margin: 0;
+    font-family:'Roboto', sans-serif;
+    
+}
+
+h1{font-size: 3.2em;}
+
+h2{font-size: 2.3em;
+color: black;}
+h3{font-size: 2em;}
+p{font-size: 1.50em;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: #dac9df;
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #503459;
+    font-size: 2.1em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #503459;
+}
+
+
+
+.Form_Center{
+    max-width: 430px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+    background-color: #dac9df;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 120px rgba(248, 0, 0, 0.1);
+
+}
+
+label{
+margin: 50px;
+text-align: center;
+margin-left: 25%;
+}
+
+input{
+    margin-left: 25%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.Registrar{
+    background-color: #503459; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 20px; /* Espaciado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de mano */
+    text-align: center; /* Centrar el texto */
+    margin: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+
+}
+
+
+.Muestrario{
+    background-color: #503459; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 20px; /* Espaciado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de mano */
+    text-align: center; /* Centrar el texto */
+    margin-left: 15px;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+@media (min-width: 768px){
+
+    header{
+        position: fixed;
+        width: 100%;
+
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+       padding-left: 0;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 10px;
+    }
+
+    header .logo{
+        margin: 0;
+        padding: 21px 30px;
+        font-weight: bold;
+        color: #503459;
+        font-size: 2.1em;
+    }
+
+    }
+    
+    .Form_Center{
+        max-width: 430px;
+        width: 90%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-49%, -49%);
+        background-color: #dac9df;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 0 120px rgba(248, 0, 0, 0.1);
+
+    }
+   input{
+        padding-left: 10px;
+        margin-left: 80px;
+   }
+
+   
+   .Muestrario{
+    background-color: #503459; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 20px; /* Espaciado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de mano */
+    text-align: center; /* Centrar el texto */
+    margin-left: 25%;
+    margin-top: 3px;
+
+}
+
+
+
+.Registrar{
+    background-color: #503459; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 20px; /* Espaciado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de mano */
+    text-align: center; /* Centrar el texto */
+    margin: 10px;
+    margin-left: 33%;
+    margin-top: 13px;
+
+}

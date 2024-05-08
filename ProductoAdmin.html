@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloProductoAdmin.css">
+    <title>Productos Brannie</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p>
+                <p class="logo">BRANNIE</p>
+            </p>
+            
+            <nav>
+                <a href="Index.html">Inicio</a>
+                <a href="ProductoUsuarios.php">Vista productos usuario</a>
+                
+                
+            </nav>
+            
+                    </div>
+
+
+                    
+    </header>
+
+   <div class="Form_Center">
+    <form action="PeticionAdmin.php" method="post" class="Formulario">
+        
+    
+        <label for="Nombre">Nombre de Producto: </label>
+        <input type="Nombre" id="Nombre" name="nombre" required>
+
+        <label for="Descripcion">Descripción:  </label>
+        <input type="Descripcion" id="Descripcion" name="Descripcion" required>
+
+        <label for="Precio">Precio:</label>
+        <input type="text" id="Precio" name="Precio" required>
+
+        <input type="submit" value="Registrar" class="Registrar">
+
+        <a href="products_list.php">
+            <input type="button" value="Modificar productos" class="Muestrario">
+        </a>
+    </div>
+    </form>
+
+
+
+
+    
+
+</body>
+</html>

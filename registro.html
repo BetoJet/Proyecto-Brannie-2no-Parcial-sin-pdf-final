@@ -1,0 +1,34 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstilosRegistro.css"> 
+    <title>Hoja de registro </title>
+</head>
+<body>
+    <h1>Registro/Inicio de Sesión</h1>
+    <form action="Peticion.php" method="post"> 
+
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" required> 
+
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" id="apellidos" name="apellidos" required> 
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="username" required> 
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required> 
+
+        <input type="submit" value="Registrar"> 
+        
+        <a href="Formulario.html">
+            <input type="button" value="Volver"> 
+        </a>
+    </form>
+</body>
+</html>

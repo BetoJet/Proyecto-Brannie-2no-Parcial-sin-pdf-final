@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+
+    <h1>Iniciar sesión</h1> 
+
+   
+    <form action="ManejarRegistro.php" method="post"> 
+        
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required> 
+
+        <a href="javascript:genPDF()">Crear PDF</a> 
+
+        <script type="text/javascript" src="jspdf.min.js"></script>
+        <script type="text/javascript">
+            function genPDF(){
+                var doc = new jsPDF(); 
+                let mensaje = document.getElementById('username').value; 
+                doc.text(20, 20, mensaje); 
+                doc.save('Usuario.pdf'); 
+            }
+        </script>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required> 
+
+        <input type="submit" value="Iniciar sesión">
+
+        <a href="registro.html">
+            <input type="button" value="Registrar"> 
+        </a>
+        
+    </form>
+
+</body>
+</html>
